@@ -3,10 +3,9 @@
 
 '''
 Write a program to read in the contents of several text files
-(you can make the text files yourself) and insert those contents into a
-spreadsheet, with one line of text per row. The lines of the first text
-file will be in the cells of column A, the lines of the second text file
-will be in the cells of column B, and so on.
+and insert those contents into a spreadsheet, with one line of text per row. 
+The lines of the first text file will be in the cells of column A, 
+the lines of the second text file will be in the cells of column B, and so on.
 '''
 
 import openpyxl, pprint, sys, pathlib, os
@@ -18,7 +17,7 @@ wb = openpyxl.Workbook()
 sheet = wb['Sheet']
 
 # Set cwd
-txtScript_dir = '/home/xubuntu/Desktop/Automate The Boring Stuff/Working with Excel Spreadsheets/textFilesToSpreadsheet/'
+txtScript_dir = '/' #use the directory containing your text files
 os.chdir(txtScript_dir)
 
 # Define dir to get txt files from
